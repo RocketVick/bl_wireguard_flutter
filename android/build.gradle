@@ -45,6 +45,13 @@ android {
     }
 
     namespace 'billion.group.wireguard_flutter'
+
+    buildTypes {
+        profile {
+            initWith profile
+            matchingFallbacks = ['debug']
+        }
+    }
 }
 
 dependencies {
